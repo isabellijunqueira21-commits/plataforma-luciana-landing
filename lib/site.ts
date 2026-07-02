@@ -3,7 +3,7 @@
 
 // Placeholder number (country code 55 = Brazil). Replace the digits after 55
 // with Luciana's real WhatsApp number, keeping the leading country code.
-const WHATSAPP_NUMBER = "5500000000000";
+const WHATSAPP_NUMBER = "553499360056";
 
 const WHATSAPP_MESSAGE =
   "Olá, Luciana! Gostaria de agendar uma conversa de 30 minutos sobre o acompanhamento nutricional.";
