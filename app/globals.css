@@ -1,0 +1,74 @@
+:root {
+  /* Palette — "Acolhimento quente / 2a — Identidade Luciana" */
+  --cream: #F5F1E8;
+  --cream-card: #FBF8F2;
+  --olive: #606D59;
+  --olive-soft: #6B7263;
+  --olive-deep: #424C3A;
+  --sage: #B8C3A5;
+  --sage-tint: #E6EADB;
+  --rose: #D9A79E;
+  --rose-deep: #C08A80;
+  --rose-tint: #F3E3DF;
+  --clay: #A9766B;
+  --stone: #EDECDF;
+  --ink: #3A3A32;
+  --ink-soft: #6B7263;
+  --muted: #8A8578;
+  --faint: #B0BAA3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-inter), Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-fraunces), Fraunces, serif;
+}
+
+/* Reduced-motion friendliness for the smooth scroll */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ── Responsive adjustments ────────────────────────────────────────── */
+/* The two-column hero collapses to a single column on narrow viewports;
+   the phone mockup stays centered. Everything else in the page already
+   uses grid auto-fit and so reflows on its own. */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    padding-top: 40px !important;
+  }
+  .hero-phone-wrap {
+    min-height: 560px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none !important;
+  }
+}
+

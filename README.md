@@ -1,3 +1,43 @@
+# Luciana Junqueira — Landing Page
+
+Next.js implementation of the `Landing Luciana.dc.html` design from the Claude
+Design handoff (direction **2a — Identidade Luciana**: cream background, deep
+olive, burnt rose; Fraunces + Inter).
+
+## Running
+
+```bash
+npm install
+npm run dev     # http://localhost:3000
+npm run build   # production build (statically prerendered)
+npm start       # serve the production build
+```
+
+## Structure
+
+- `app/layout.tsx` — fonts (Fraunces/Inter via `next/font`), metadata, `pt-BR`.
+- `app/page.tsx` — composes the sections below.
+- `components/` — `Nav`, `Hero` (+ `PhoneMockup`), `Method`, `HowItWorks`,
+  `Difference`, `Testimonials`, `Booking`.
+- `lib/site.ts` — the WhatsApp link. **Replace the placeholder number** in
+  `WHATSAPP_NUMBER` with Luciana's real number to go live.
+- `public/assets/` — the olive/cream logos.
+
+## Known placeholders (from the design, left intentionally visible)
+
+- **Testimonials** — three "Espaço para o depoimento…" quotes with
+  `Nome · tempo de acompanhamento`.
+- **CRN** — footer reads `CRN 00000`.
+- **"Diferencial" photo** — an in-brand empty photo frame; drop in a real photo
+  (`components/Difference.tsx`) following the guideline: comida de verdade,
+  natureza, calma — nada de corpo ou balança.
+- **Booking calendar** — a visual mock (July 2026, day 7 selected). The
+  buttons already point at a WhatsApp link once the number is set.
+
+The original design bundle is preserved under `project/` and `chats/`.
+
+---
+
 # CODING AGENTS: READ THIS FIRST
 
 This is a **handoff bundle** from Claude Design (claude.ai/design).
