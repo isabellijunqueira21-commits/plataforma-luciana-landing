@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #F5F1E8; font-family: Inter, sans-serif; }
+  html { scroll-behavior: smooth; }
+</style>
+</helmet>
+
+<div style="min-height: 100vh; background: #F5F1E8; color: #3A3A32; overflow-x: hidden;">
+
+  <!-- NAV -->
+  <div style="position: sticky; top: 16px; z-index: 50; display: flex; justify-content: center; padding: 0 20px;">
+    <div style="display: flex; align-items: center; gap: 28px; background: rgba(251,248,242,0.85); backdrop-filter: blur(14px); border: 1px solid rgba(96,109,89,0.12); border-radius: 999px; padding: 10px 12px 10px 20px; box-shadow: 0 8px 30px rgba(96,109,89,0.12);">
+      <a href="#" style="display: flex; align-items: center;"><img src="assets/logo-olive.png" alt="Luciana Junqueira · Nutricionista" style="height: 30px; display: block;"></a>
+      <div style="display: flex; gap: 20px;">
+        <a href="#metodo" style="font: 500 13.5px Inter, sans-serif; color: #6B7263; text-decoration: none;">O método</a>
+        <a href="#como-funciona" style="font: 500 13.5px Inter, sans-serif; color: #6B7263; text-decoration: none;">Como funciona</a>
+        <a href="#depoimentos" style="font: 500 13.5px Inter, sans-serif; color: #6B7263; text-decoration: none;">Depoimentos</a>
+      </div>
+      <a href="#agendar" style="display: flex; align-items: center; gap: 8px; background: #606D59; color: #FBF8F2; border-radius: 999px; padding: 10px 18px; font: 600 13.5px Inter, sans-serif; text-decoration: none; white-space: nowrap;">Agendar conversa
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FBF8F2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div data-screen-label="Hero" style="position: relative; max-width: 1200px; margin: 0 auto; padding: 72px 32px 40px; display: grid; grid-template-columns: minmax(320px, 1.1fr) minmax(340px, 0.9fr); gap: 48px; align-items: center;">
+    <div style="position: absolute; top: -120px; left: -180px; width: 560px; height: 560px; border-radius: 999px; background: radial-gradient(circle, rgba(184,195,165,0.4), rgba(184,195,165,0)); pointer-events: none;"></div>
+    <div style="position: absolute; top: 60px; right: -160px; width: 520px; height: 520px; border-radius: 999px; background: radial-gradient(circle, rgba(217,167,158,0.32), rgba(217,167,158,0)); pointer-events: none;"></div>
+
+    <div style="position: relative; display: flex; flex-direction: column; gap: 24px;">
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: #E6EADB; border-radius: 999px; padding: 7px 14px; align-self: flex-start;">
+        <span style="width: 7px; height: 7px; border-radius: 999px; background: #606D59;"></span>
+        <span style="font: 500 12.5px Inter, sans-serif; color: #606D59;">Nutrição de acompanhamento contínuo</span>
+      </div>
+      <h1 style="margin: 0; font: 500 clamp(38px, 4.6vw, 58px)/1.12 Fraunces, serif; letter-spacing: -0.01em;">Uma transformação <em style="font-style: italic; color: #606D59;">sustentável</em> começa com <em style="font-style: italic; color: #C08A80;">cuidado</em>, não com castigo.</h1>
+      <p style="margin: 0; font: 400 17px/1.65 Inter, sans-serif; color: #6B7263; max-width: 460px;">Acompanhamento nutricional próximo, no seu ritmo: check-ins gentis, materiais no seu tempo e uma evolução que você consegue ver.</p>
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <a href="#agendar" style="display: flex; align-items: center; gap: 10px; background: #606D59; color: #FBF8F2; border-radius: 999px; padding: 15px 26px; font: 600 15px Inter, sans-serif; text-decoration: none; box-shadow: 0 10px 26px rgba(96,109,89,0.3);">Agendar conversa
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FBF8F2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+        </a>
+        <a href="#como-funciona" style="font: 600 14px Inter, sans-serif; color: #606D59; text-decoration: none; border-bottom: 1.5px solid rgba(96,109,89,0.35); padding-bottom: 2px;">Conhecer o acompanhamento</a>
+      </div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px;">
+        <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(251,248,242,0.8); border: 1px solid rgba(96,109,89,0.14); border-radius: 999px; padding: 6px 13px; font: 500 12.5px Inter, sans-serif; color: #6B7263;">🌿 Sem dieta-castigo</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(251,248,242,0.8); border: 1px solid rgba(96,109,89,0.14); border-radius: 999px; padding: 6px 13px; font: 500 12.5px Inter, sans-serif; color: #6B7263;">💬 Contato próximo</span>
+        <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(251,248,242,0.8); border: 1px solid rgba(96,109,89,0.14); border-radius: 999px; padding: 6px 13px; font: 500 12.5px Inter, sans-serif; color: #6B7263;">📈 Evolução visível</span>
+      </div>
+    </div>
+
+    <div style="position: relative; display: flex; justify-content: center; min-height: 640px;">
+      <div style="transform: scale(0.72); transform-origin: top center;">
+        <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx" hint-size="400px,860px">
+          <div style="height: 100%; background: #F5F1E8; display: flex; flex-direction: column; font-family: Inter, sans-serif; color: #3A3A32;">
+            <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+              <div style="background: #606D59; border-radius: 0 0 32px 32px; padding: 62px 22px 26px; display: flex; flex-direction: column; gap: 16px;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div style="display: flex; flex-direction: column; gap: 2px;">
+                    <span style="font: 500 28px Fraunces, serif; color: #FBF8F2;">Oi, Marina</span>
+                    <span style="font: 400 13px Inter, sans-serif; color: #DFE4D3;">Dia 12 da sua jornada</span>
+                  </div>
+                  <div style="width: 44px; height: 44px; border-radius: 999px; background: #FBF8F2; display: flex; align-items: center; justify-content: center; font: 500 16px Fraunces, serif; color: #606D59;">M</div>
+                </div>
+                <div style="background: #FBF8F2; border-radius: 24px; padding: 20px; box-shadow: 0 10px 26px rgba(66,76,58,0.18); display: flex; align-items: center; gap: 20px;">
+                  <svg width="104" height="104" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#E9E4D8" stroke-width="10"></circle>
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#D9A79E" stroke-width="10" stroke-linecap="round" stroke-dasharray="131 327" transform="rotate(-90 60 60)"></circle>
+                    <text x="60" y="66" text-anchor="middle" style="font: 600 22px Fraunces, serif; fill: #3A3A32;">40%</text>
+                  </svg>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <span style="font: 500 19px Fraunces, serif;">Sua jornada</span>
+                    <span style="font: 400 13px Inter, sans-serif; color: #8A8578;">Dia 12 de 30</span>
+                    <div style="display: inline-flex; align-items: center; gap: 6px; background: #F3E3DF; border-radius: 999px; padding: 6px 12px; align-self: flex-start;">
+                      <span style="font-size: 13px;">🔥</span>
+                      <span style="font: 600 12px Inter, sans-serif; color: #A9766B;">6 dias seguidos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 18px 22px 0; display: flex; flex-direction: column; gap: 14px;">
+                <div style="background: #FBF8F2; border-radius: 24px; padding: 20px 22px; box-shadow: 0 6px 20px rgba(122,110,90,0.1); display: flex; flex-direction: column; gap: 12px;">
+                  <span style="font: 500 19px Fraunces, serif;">Check-in de hoje</span>
+                  <span style="font: 400 13px Inter, sans-serif; color: #8A8578;">Leva 1 minuto — um momento só seu.</span>
+                  <div style="background: #D9A79E; color: #FFFAF8; border-radius: 999px; padding: 13px; text-align: center; font: 600 14px Inter, sans-serif; box-shadow: 0 8px 20px rgba(217,167,158,0.35);">Responder</div>
+                </div>
+                <div style="background: #FBF8F2; border-radius: 24px; padding: 18px 22px; box-shadow: 0 6px 20px rgba(122,110,90,0.1); display: flex; align-items: center; gap: 14px;">
+                  <div style="width: 44px; height: 44px; border-radius: 16px; background: #E6EADB; display: flex; align-items: center; justify-content: center; font-size: 18px;">🌿</div>
+                  <div style="display: flex; flex-direction: column; gap: 2px;">
+                    <span style="font: 600 14px Inter, sans-serif;">Um lembrete gentil</span>
+                    <span style="font: 400 12.5px Inter, sans-serif; color: #8A8578;">Comer bem é cuidado, não castigo.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="margin: 0 40px 28px; background: #606D59; border-radius: 999px; padding: 12px 26px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 10px 24px rgba(66,76,58,0.3);">
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#FBF8F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"></path></svg>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B0BAA3" stroke-width="2" stroke-linecap="round"><path d="M5 20V12"></path><path d="M12 20V6"></path><path d="M19 20v-4"></path></svg>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B0BAA3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8"></path><path d="M12 17v4"></path><path d="M6 3h12v6a6 6 0 0 1-12 0z"></path><path d="M6 5H3v2a4 4 0 0 0 3 3.9"></path><path d="M18 5h3v2a4 4 0 0 1-3 3.9"></path></svg>
+              <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="#B0BAA3" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"></path></svg>
+            </div>
+          </div>
+        </x-import>
+      </div>
+      <div style="position: absolute; top: 64px; left: -14px; background: rgba(251,248,242,0.75); backdrop-filter: blur(10px); border: 1px solid rgba(96,109,89,0.14); border-radius: 20px; padding: 14px 18px; box-shadow: 0 12px 30px rgba(96,109,89,0.14); display: flex; flex-direction: column; gap: 2px;">
+        <span style="font: 600 26px Fraunces, serif; color: #C08A80;">6 dias</span>
+        <span style="font: 500 11.5px Inter, sans-serif; color: #8A8578;">de streak seguidos</span>
+      </div>
+      <div style="position: absolute; top: 250px; right: -20px; background: rgba(251,248,242,0.75); backdrop-filter: blur(10px); border: 1px solid rgba(96,109,89,0.14); border-radius: 20px; padding: 14px 18px; box-shadow: 0 12px 30px rgba(96,109,89,0.14); display: flex; flex-direction: column; gap: 2px;">
+        <span style="font: 600 26px Fraunces, serif; color: #606D59;">8/10</span>
+        <span style="font: 500 11.5px Inter, sans-serif; color: #8A8578;">bem-estar médio</span>
+      </div>
+      <div style="position: absolute; bottom: 96px; left: 4px; background: rgba(251,248,242,0.75); backdrop-filter: blur(10px); border: 1px solid rgba(96,109,89,0.14); border-radius: 20px; padding: 14px 18px; box-shadow: 0 12px 30px rgba(96,109,89,0.14); display: flex; flex-direction: column; gap: 2px;">
+        <span style="font: 600 26px Fraunces, serif; color: #7A8468;">12</span>
+        <span style="font: 500 11.5px Inter, sans-serif; color: #8A8578;">check-ins este mês</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- O MÉTODO -->
+  <div id="metodo" data-screen-label="O método" style="max-width: 1200px; margin: 0 auto; padding: 72px 32px;">
+    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px;">
+      <span style="font: 600 12px Inter, sans-serif; color: #7A8468; letter-spacing: 0.18em;">O MÉTODO</span>
+      <h2 style="margin: 0; font: 500 clamp(28px, 3.2vw, 40px)/1.2 Fraunces, serif;">Três pilares, <em style="font-style: italic; color: #606D59;">um caminho</em> só seu</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      <div style="background: #FBF8F2; border-radius: 28px; padding: 32px 28px; box-shadow: 0 8px 26px rgba(122,110,90,0.09); display: flex; flex-direction: column; gap: 14px;">
+        <span style="font: italic 500 15px Fraunces, serif; color: #B0BAA3;">01</span>
+        <div style="width: 48px; height: 48px; border-radius: 16px; background: #E6EADB; display: flex; align-items: center; justify-content: center; font-size: 20px;">🧭</div>
+        <span style="font: 500 22px Fraunces, serif;">Mapeamento</span>
+        <p style="margin: 0; font: 400 14.5px/1.6 Inter, sans-serif; color: #6B7263;">Entender sua rotina, sua relação com a comida e o que já funciona pra você — sem julgamento.</p>
+      </div>
+      <div style="background: #FBF8F2; border-radius: 28px; padding: 32px 28px; box-shadow: 0 8px 26px rgba(122,110,90,0.09); display: flex; flex-direction: column; gap: 14px;">
+        <span style="font: italic 500 15px Fraunces, serif; color: #D9A79E;">02</span>
+        <div style="width: 48px; height: 48px; border-radius: 16px; background: #F3E3DF; display: flex; align-items: center; justify-content: center; font-size: 20px;">🌱</div>
+        <span style="font: 500 22px Fraunces, serif;">Intervenção</span>
+        <p style="margin: 0; font: 400 14.5px/1.6 Inter, sans-serif; color: #6B7263;">Mudanças pequenas e possíveis, ajustadas semana a semana com check-ins e contato próximo.</p>
+      </div>
+      <div style="background: #FBF8F2; border-radius: 28px; padding: 32px 28px; box-shadow: 0 8px 26px rgba(122,110,90,0.09); display: flex; flex-direction: column; gap: 14px;">
+        <span style="font: italic 500 15px Fraunces, serif; color: #7A8468;">03</span>
+        <div style="width: 48px; height: 48px; border-radius: 16px; background: #EDECDF; display: flex; align-items: center; justify-content: center; font-size: 20px;">🤲</div>
+        <span style="font: 500 22px Fraunces, serif;">Manutenção</span>
+        <p style="margin: 0; font: 400 14.5px/1.6 Inter, sans-serif; color: #6B7263;">Autonomia de verdade: você sai sabendo se cuidar, com a Luciana por perto quando precisar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMO FUNCIONA -->
+  <div id="como-funciona" data-screen-label="Como funciona" style="background: #EDECDF; border-radius: 48px; margin: 0 20px;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 72px 32px;">
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 44px;">
+        <span style="font: 600 12px Inter, sans-serif; color: #7A8468; letter-spacing: 0.18em;">COMO FUNCIONA</span>
+        <h2 style="margin: 0; font: 500 clamp(28px, 3.2vw, 40px)/1.2 Fraunces, serif;">Acompanhamento <em style="font-style: italic; color: #C08A80;">contínuo</em>, do seu jeito</h2>
+        <p style="margin: 0; font: 400 15.5px/1.6 Inter, sans-serif; color: #6B7263; max-width: 520px;">Entre uma consulta e outra, o app mantém a gente por perto: você registra como se sentiu, assiste os materiais no seu tempo e vê sua evolução acontecer.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="background: #FBF8F2; border-radius: 24px; padding: 20px; box-shadow: 0 8px 24px rgba(122,110,90,0.1); display: flex; flex-direction: column; gap: 12px;">
+            <span style="font: 400 13px Inter, sans-serif; color: #8A8578;">Como você se sentiu hoje?</span>
+            <div style="display: flex; gap: 10px;">
+              <div style="width: 46px; height: 46px; border-radius: 999px; background: #F5F1E8; display: flex; align-items: center; justify-content: center; font-size: 20px;">😔</div>
+              <div style="width: 46px; height: 46px; border-radius: 999px; background: #F5F1E8; display: flex; align-items: center; justify-content: center; font-size: 20px;">😐</div>
+              <div style="width: 46px; height: 46px; border-radius: 999px; background: #D9A79E; display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 6px 16px rgba(217,167,158,0.4);">🙂</div>
+              <div style="width: 46px; height: 46px; border-radius: 999px; background: #F5F1E8; display: flex; align-items: center; justify-content: center; font-size: 20px;">😄</div>
+            </div>
+          </div>
+          <span style="font: 500 15px Fraunces, serif;">1 · Check-in diário de 1 minuto</span>
+          <p style="margin: 0; font: 400 13.5px/1.6 Inter, sans-serif; color: #6B7263;">Humor, energia e o que você quiser contar. Só a Luciana vê.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="background: #FBF8F2; border-radius: 24px; padding: 20px; box-shadow: 0 8px 24px rgba(122,110,90,0.1); display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 42px; height: 42px; border-radius: 999px; background: #E6EADB; display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="#606D59"><path d="M8 5v14l11-7z"></path></svg></div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font: 500 14px Fraunces, serif;">Fome emocional</span>
+                <span style="font: 400 11.5px Inter, sans-serif; color: #8A8578;">Vídeo · 8 min</span>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div style="width: 42px; height: 42px; border-radius: 999px; background: #F3E3DF; display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="#A9766B"><path d="M8 5v14l11-7z"></path></svg></div>
+              <div style="display: flex; flex-direction: column;">
+                <span style="font: 500 14px Fraunces, serif;">Montando o prato</span>
+                <span style="font: 400 11.5px Inter, sans-serif; color: #8A8578;">Vídeo · 5 min</span>
+              </div>
+            </div>
+          </div>
+          <span style="font: 500 15px Fraunces, serif;">2 · Materiais no seu tempo</span>
+          <p style="margin: 0; font: 400 13.5px/1.6 Inter, sans-serif; color: #6B7263;">Vídeos e guias curtos da Luciana, pra ver quando fizer sentido.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="background: #FBF8F2; border-radius: 24px; padding: 20px; box-shadow: 0 8px 24px rgba(122,110,90,0.1); display: flex; flex-direction: column; gap: 10px;">
+            <span style="font: 400 13px Inter, sans-serif; color: #8A8578;">Disposição · 30 dias</span>
+            <svg width="100%" height="70" viewBox="0 0 260 70" preserveAspectRatio="none">
+              <path d="M0 55 C 26 52, 39 58, 60 50 S 104 38, 130 40 S 173 30, 199 25 S 238 18, 260 13 L 260 70 L 0 70 Z" fill="#E6EADB"></path>
+              <path d="M0 55 C 26 52, 39 58, 60 50 S 104 38, 130 40 S 173 30, 199 25 S 238 18, 260 13" fill="none" stroke="#606D59" stroke-width="2.5" stroke-linecap="round"></path>
+              <circle cx="260" cy="13" r="4.5" fill="#606D59" stroke="#FBF8F2" stroke-width="2"></circle>
+            </svg>
+            <div style="display: flex; gap: 8px;">
+              <span style="background: #E6EADB; border-radius: 999px; padding: 5px 11px; font: 600 12px Inter, sans-serif; color: #606D59;">8/10 bem-estar</span>
+              <span style="background: #F3E3DF; border-radius: 999px; padding: 5px 11px; font: 600 12px Inter, sans-serif; color: #A9766B;">+12% energia</span>
+            </div>
+          </div>
+          <span style="font: 500 15px Fraunces, serif;">3 · Evolução que você vê</span>
+          <p style="margin: 0; font: 400 13.5px/1.6 Inter, sans-serif; color: #6B7263;">Bem-estar e energia ao longo do tempo — nada de balança como medida de sucesso.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIFERENCIAL -->
+  <div data-screen-label="Diferencial" style="max-width: 1200px; margin: 0 auto; padding: 88px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+      <span style="font: 600 12px Inter, sans-serif; color: #7A8468; letter-spacing: 0.18em;">POR QUE É DIFERENTE</span>
+      <h2 style="margin: 0; font: 500 clamp(28px, 3.2vw, 40px)/1.2 Fraunces, serif;">Perto de verdade, <em style="font-style: italic; color: #606D59;">leve</em> de verdade</h2>
+      <p style="margin: 0; font: 400 15.5px/1.65 Inter, sans-serif; color: #6B7263;">Aqui não existe dieta-castigo, foto de antes e depois nem cobrança por número na balança. Existe acompanhamento próximo, uma gamificação gentil que celebra constância — check-ins, streaks e um ranking por apelido — e um plano que respeita a sua vida real.</p>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 34px; height: 34px; border-radius: 999px; background: #E6EADB; display: flex; align-items: center; justify-content: center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#606D59" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"></path></svg></div>
+          <span style="font: 500 14.5px Inter, sans-serif;">Mensagens e ajustes entre as consultas</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 34px; height: 34px; border-radius: 999px; background: #F3E3DF; display: flex; align-items: center; justify-content: center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#A9766B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"></path></svg></div>
+          <span style="font: 500 14.5px Inter, sans-serif;">Constância celebrada, deslizes acolhidos</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 34px; height: 34px; border-radius: 999px; background: #EDECDF; display: flex; align-items: center; justify-content: center;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#7A8468" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 13 4 4L19 7"></path></svg></div>
+          <span style="font: 500 14.5px Inter, sans-serif;">Privacidade: no ranking, você escolhe seu apelido</span>
+        </div>
+      </div>
+    </div>
+    <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="diferencial-foto" shape="rounded" radius="32" placeholder="Foto: comida de verdade, mesa, natureza ou a Luciana atendendo" style="width: 100%; height: 420px;"></x-import>
+  </div>
+
+  <!-- PROVA SOCIAL -->
+  <div id="depoimentos" data-screen-label="Depoimentos" style="max-width: 1200px; margin: 0 auto; padding: 0 32px 88px;">
+    <div style="background: #606D59; border-radius: 40px; padding: 64px 48px; display: flex; flex-direction: column; gap: 40px;">
+      <div style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-end; justify-content: space-between;">
+        <h2 style="margin: 0; font: 500 clamp(26px, 3vw, 36px)/1.25 Fraunces, serif; color: #FBF8F2; max-width: 420px;">Quem caminha com a <em style="font-style: italic; color: #D9A79E;">Luciana</em></h2>
+        <div style="display: flex; gap: 48px;">
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font: 600 40px Fraunces, serif; color: #FBF8F2;">120+</span>
+            <span style="font: 500 12.5px Inter, sans-serif; color: #CBD2BE;">pacientes acompanhadas</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 4px;">
+            <span style="font: 600 40px Fraunces, serif; color: #FBF8F2;">92%</span>
+            <span style="font: 500 12.5px Inter, sans-serif; color: #CBD2BE;">seguem após 3 meses</span>
+          </div>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+        <div style="background: rgba(251,248,242,0.1); border: 1px solid rgba(251,248,242,0.16); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <p style="margin: 0; font: italic 400 16px/1.6 Fraunces, serif; color: #FBF8F2;">“Espaço para o depoimento de uma paciente — a primeira vez em que cuidar da alimentação não pareceu punição.”</p>
+          <span style="font: 500 13px Inter, sans-serif; color: #CBD2BE;">Nome · tempo de acompanhamento</span>
+        </div>
+        <div style="background: rgba(251,248,242,0.1); border: 1px solid rgba(251,248,242,0.16); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <p style="margin: 0; font: italic 400 16px/1.6 Fraunces, serif; color: #FBF8F2;">“Espaço para o depoimento de uma paciente — sobre constância, check-ins e sentir-se acompanhada de verdade.”</p>
+          <span style="font: 500 13px Inter, sans-serif; color: #CBD2BE;">Nome · tempo de acompanhamento</span>
+        </div>
+        <div style="background: rgba(251,248,242,0.1); border: 1px solid rgba(251,248,242,0.16); border-radius: 24px; padding: 26px; display: flex; flex-direction: column; gap: 14px;">
+          <p style="margin: 0; font: italic 400 16px/1.6 Fraunces, serif; color: #FBF8F2;">“Espaço para o depoimento de uma paciente — sobre energia, bem-estar e uma relação nova com a comida.”</p>
+          <span style="font: 500 13px Inter, sans-serif; color: #CBD2BE;">Nome · tempo de acompanhamento</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA FINAL / AGENDAMENTO -->
+  <div id="agendar" data-screen-label="CTA final" style="max-width: 1200px; margin: 0 auto; padding: 0 32px 96px;">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 40px; max-width: 560px;">
+      <span style="font: 600 12px Inter, sans-serif; color: #7A8468; letter-spacing: 0.18em;">AGENDE UMA CONVERSA</span>
+      <h2 style="margin: 0; font: 500 clamp(30px, 3.6vw, 46px)/1.2 Fraunces, serif;">Uma conversa de <em style="font-style: italic; color: #606D59;">30 minutos</em>, sem compromisso.</h2>
+      <p style="margin: 0; font: 400 16px/1.6 Inter, sans-serif; color: #6B7263;">A gente entende o seu momento e você conhece como o acompanhamento funciona. Escolha o melhor dia pra você.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; align-items: stretch;">
+      <div style="background: #FBF8F2; border-radius: 32px; padding: 36px 32px; box-shadow: 0 8px 26px rgba(122,110,90,0.09); display: flex; flex-direction: column; gap: 18px;">
+        <img src="assets/logo-olive.png" alt="Luciana Junqueira · Nutricionista" style="width: 200px; display: block; margin-bottom: 6px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 36px; height: 36px; border-radius: 999px; background: #E6EADB; display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#606D59" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></div>
+          <span style="font: 500 14.5px Inter, sans-serif;">30 minutos</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 36px; height: 36px; border-radius: 999px; background: #F3E3DF; display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A9766B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-3-.4-4.2-1.1L3 20l1.1-5.3A8.5 8.5 0 1 1 21 11.5z"></path></svg></div>
+          <span style="font: 500 14.5px Inter, sans-serif;">Pelo WhatsApp ou chamada de vídeo</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 36px; height: 36px; border-radius: 999px; background: #EDECDF; display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A8468" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c2.5 2.4 3.8 5.6 3.8 9s-1.3 6.6-3.8 9c-2.5-2.4-3.8-5.6-3.8-9s1.3-6.6 3.8-9z"></path></svg></div>
+          <span style="font: 500 14.5px Inter, sans-serif;">Horário de Brasília</span>
+        </div>
+        <a href="#agendar" style="margin-top: auto; display: flex; align-items: center; justify-content: center; gap: 10px; background: #606D59; color: #FBF8F2; border-radius: 999px; padding: 16px 28px; font: 600 15px Inter, sans-serif; text-decoration: none; box-shadow: 0 10px 26px rgba(96,109,89,0.3);">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FBF8F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5c-1.5 0-3-.4-4.2-1.1L3 20l1.1-5.3A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <span style="font: 400 12px Inter, sans-serif; color: #B0BAA3; text-align: center;">Sem compromisso — é só uma conversa. 💛</span>
+      </div>
+      <div style="background: #FBF8F2; border-radius: 32px; padding: 32px; box-shadow: 0 8px 26px rgba(122,110,90,0.09); display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <div style="width: 32px; height: 32px; border-radius: 999px; background: #F5F1E8; display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8A8578" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"></path></svg></div>
+          <span style="font: 500 19px Fraunces, serif;">Julho 2026</span>
+          <div style="width: 32px; height: 32px; border-radius: 999px; background: #F5F1E8; display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8A8578" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"></path></svg></div>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px;">
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">D</span>
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">S</span>
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">T</span>
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">Q</span>
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">Q</span>
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">S</span>
+          <span style="font: 600 11px Inter, sans-serif; color: #B9B2A3; text-align: center;">S</span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif; color: #B9B2A3;">1</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif; color: #B9B2A3;">2</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">3</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">4</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">5</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">6</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; background: #606D59; display: flex; align-items: center; justify-content: center; font: 600 13.5px Inter, sans-serif; color: #FBF8F2; box-shadow: 0 6px 16px rgba(96,109,89,0.35);">7</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">8</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">9</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">10</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">11</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif; color: #B9B2A3;">12</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">13</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">14</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">15</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">16</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">17</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">18</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif; color: #B9B2A3;">19</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">20</div>
+          <div style="aspect-ratio: 1; border-radius: 14px; border: 1px solid #EDE8DC; display: flex; align-items: center; justify-content: center; font: 500 13.5px Inter, sans-serif;">21</div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; background: #E6EADB; border-radius: 999px; padding: 9px 16px; align-self: center;">
+          <span style="width: 7px; height: 7px; border-radius: 999px; background: #606D59;"></span>
+          <span style="font: 500 12.5px Inter, sans-serif; color: #606D59;">Terça, 7 de julho · horários à tarde disponíveis</span>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center; margin-top: 48px;">
+      <span style="font: 400 12.5px Inter, sans-serif; color: #B0BAA3;">Luciana Junqueira · Nutricionista · CRN 00000</span>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
