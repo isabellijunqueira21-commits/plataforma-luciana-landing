@@ -11,7 +11,7 @@ const chip: React.CSSProperties = {
   borderRadius: 999,
   padding: "6px 13px",
   font: `500 12.5px ${sans}`,
-  color: "#616E48",
+  color: "#6B7263",
 };
 
 const floatCard: React.CSSProperties = {
@@ -86,7 +86,7 @@ export default function Hero() {
             display: "inline-flex",
             alignItems: "center",
             gap: 8,
-            background: "#DDE9C4",
+            background: "#E6EADB",
             borderRadius: 999,
             padding: "7px 14px",
             alignSelf: "flex-start",
@@ -97,10 +97,10 @@ export default function Hero() {
               width: 7,
               height: 7,
               borderRadius: 999,
-              background: "#587C34",
+              background: "#606D59",
             }}
           />
-          <span style={{ font: `500 12.5px ${sans}`, color: "#587C34" }}>
+          <span style={{ font: `500 12.5px ${sans}`, color: "#606D59" }}>
             Nutrição de acompanhamento contínuo
           </span>
         </div>
@@ -112,16 +112,16 @@ export default function Hero() {
           }}
         >
           Uma transformação{" "}
-          <em style={{ fontStyle: "italic", color: "#587C34" }}>sustentável</em>{" "}
+          <em style={{ fontStyle: "italic", color: "#606D59" }}>sustentável</em>{" "}
           começa com{" "}
-          <em style={{ fontStyle: "italic", color: "#CC7A68" }}>cuidado</em>,
+          <em style={{ fontStyle: "italic", color: "#C08A80" }}>cuidado</em>,
           não com castigo.
         </h1>
         <p
           style={{
             margin: 0,
             font: `400 17px/1.65 ${sans}`,
-            color: "#616E48",
+            color: "#6B7263",
             maxWidth: 460,
           }}
         >
@@ -137,7 +137,7 @@ export default function Hero() {
               display: "flex",
               alignItems: "center",
               gap: 10,
-              background: "#587C34",
+              background: "#606D59",
               color: "#FBF8F2",
               borderRadius: 999,
               padding: "15px 26px",
@@ -165,7 +165,7 @@ export default function Hero() {
             href="#como-funciona"
             style={{
               font: `600 14px ${sans}`,
-              color: "#587C34",
+              color: "#606D59",
               textDecoration: "none",
               borderBottom: "1.5px solid rgba(96,109,89,0.35)",
               paddingBottom: 2,
@@ -197,7 +197,7 @@ export default function Hero() {
           <PhoneMockup />
         </div>
         <div style={{ ...floatCard, top: 64, left: -14 }}>
-          <span style={{ font: `600 26px ${serif}`, color: "#CC7A68" }}>
+          <span style={{ font: `600 26px ${serif}`, color: "#C08A80" }}>
             6 dias
           </span>
           <span style={{ font: `500 11.5px ${sans}`, color: "#8A8578" }}>
@@ -205,7 +205,7 @@ export default function Hero() {
           </span>
         </div>
         <div style={{ ...floatCard, top: 250, right: -20 }}>
-          <span style={{ font: `600 26px ${serif}`, color: "#587C34" }}>
+          <span style={{ font: `600 26px ${serif}`, color: "#606D59" }}>
             8/10
           </span>
           <span style={{ font: `500 11.5px ${sans}`, color: "#8A8578" }}>
@@ -213,7 +213,7 @@ export default function Hero() {
           </span>
         </div>
         <div style={{ ...floatCard, bottom: 96, left: 4 }}>
-          <span style={{ font: `600 26px ${serif}`, color: "#6C7E45" }}>
+          <span style={{ font: `600 26px ${serif}`, color: "#7A8468" }}>
             12
           </span>
           <span style={{ font: `500 11.5px ${sans}`, color: "#8A8578" }}>

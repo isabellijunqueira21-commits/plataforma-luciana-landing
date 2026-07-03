@@ -15,7 +15,7 @@ export default function Testimonials() {
     >
       <div
         style={{
-          background: "#587C34",
+          background: "#606D59",
           borderRadius: 40,
           padding: "64px 48px",
           display: "flex",
@@ -41,7 +41,7 @@ export default function Testimonials() {
             }}
           >
             Quem caminha com a{" "}
-            <em style={{ fontStyle: "italic", color: "#E29A86" }}>Luciana</em>
+            <em style={{ fontStyle: "italic", color: "#D9A79E" }}>Luciana</em>
           </h2>
           <div style={{ display: "flex", gap: 48 }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>

@@ -5,7 +5,7 @@ import logoOlive from "@/public/assets/logo-olive.png";
 
 const navLink: React.CSSProperties = {
   font: `500 13.5px ${sans}`,
-  color: "#616E48",
+  color: "#6B7263",
   textDecoration: "none",
 };
 
@@ -62,7 +62,7 @@ export default function Nav() {
             display: "flex",
             alignItems: "center",
             gap: 8,
-            background: "#587C34",
+            background: "#606D59",
             color: "#FBF8F2",
             borderRadius: 999,
             padding: "10px 18px",

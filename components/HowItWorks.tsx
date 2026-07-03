@@ -19,7 +19,7 @@ export default function HowItWorks() {
           <span
             style={{
               font: `600 12px ${sans}`,
-              color: "#6C7E45",
+              color: "#7A8468",
               letterSpacing: "0.18em",
             }}
           >
@@ -29,14 +29,14 @@ export default function HowItWorks() {
             style={{ margin: 0, font: `500 clamp(28px, 3.2vw, 40px)/1.2 ${serif}` }}
           >
             Acompanhamento{" "}
-            <em style={{ fontStyle: "italic", color: "#CC7A68" }}>contínuo</em>,
+            <em style={{ fontStyle: "italic", color: "#C08A80" }}>contínuo</em>,
             do seu jeito
           </h2>
           <p
             style={{
               margin: 0,
               font: `400 15.5px/1.6 ${sans}`,
-              color: "#616E48",
+              color: "#6B7263",
               maxWidth: 520,
             }}
           >
@@ -73,7 +73,7 @@ export default function HowItWorks() {
                 {[
                   { emoji: "😔", bg: "#F5F1E8", active: false },
                   { emoji: "😐", bg: "#F5F1E8", active: false },
-                  { emoji: "🙂", bg: "#E29A86", active: true },
+                  { emoji: "🙂", bg: "#D9A79E", active: true },
                   { emoji: "😄", bg: "#F5F1E8", active: false },
                 ].map((m, i) => (
                   <div
@@ -104,7 +104,7 @@ export default function HowItWorks() {
               style={{
                 margin: 0,
                 font: `400 13.5px/1.6 ${sans}`,
-                color: "#616E48",
+                color: "#6B7263",
               }}
             >
               Humor, energia e o que você quiser contar. Só a Luciana vê.
@@ -128,14 +128,14 @@ export default function HowItWorks() {
                 {
                   title: "Fome emocional",
                   meta: "Vídeo · 8 min",
-                  bg: "#DDE9C4",
-                  fill: "#587C34",
+                  bg: "#E6EADB",
+                  fill: "#606D59",
                 },
                 {
                   title: "Montando o prato",
                   meta: "Vídeo · 5 min",
-                  bg: "#F9DCD1",
-                  fill: "#B46853",
+                  bg: "#F3E3DF",
+                  fill: "#A9766B",
                 },
               ].map((v) => (
                 <div
@@ -175,7 +175,7 @@ export default function HowItWorks() {
               style={{
                 margin: 0,
                 font: `400 13.5px/1.6 ${sans}`,
-                color: "#616E48",
+                color: "#6B7263",
               }}
             >
               Vídeos e guias curtos da Luciana, pra ver quando fizer sentido.
@@ -206,12 +206,12 @@ export default function HowItWorks() {
               >
                 <path
                   d="M0 55 C 26 52, 39 58, 60 50 S 104 38, 130 40 S 173 30, 199 25 S 238 18, 260 13 L 260 70 L 0 70 Z"
-                  fill="#DDE9C4"
+                  fill="#E6EADB"
                 />
                 <path
                   d="M0 55 C 26 52, 39 58, 60 50 S 104 38, 130 40 S 173 30, 199 25 S 238 18, 260 13"
                   fill="none"
-                  stroke="#587C34"
+                  stroke="#606D59"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                 />
@@ -219,7 +219,7 @@ export default function HowItWorks() {
                   cx="260"
                   cy="13"
                   r="4.5"
-                  fill="#587C34"
+                  fill="#606D59"
                   stroke="#FBF8F2"
                   strokeWidth="2"
                 />
@@ -227,22 +227,22 @@ export default function HowItWorks() {
               <div style={{ display: "flex", gap: 8 }}>
                 <span
                   style={{
-                    background: "#DDE9C4",
+                    background: "#E6EADB",
                     borderRadius: 999,
                     padding: "5px 11px",
                     font: `600 12px ${sans}`,
-                    color: "#587C34",
+                    color: "#606D59",
                   }}
                 >
                   8/10 bem-estar
                 </span>
                 <span
                   style={{
-                    background: "#F9DCD1",
+                    background: "#F3E3DF",
                     borderRadius: 999,
                     padding: "5px 11px",
                     font: `600 12px ${sans}`,
-                    color: "#B46853",
+                    color: "#A9766B",
                   }}
                 >
                   +12% energia
@@ -256,7 +256,7 @@ export default function HowItWorks() {
               style={{
                 margin: 0,
                 font: `400 13.5px/1.6 ${sans}`,
-                color: "#616E48",
+                color: "#6B7263",
               }}
             >
               Bem-estar e energia ao longo do tempo — nada de balança como

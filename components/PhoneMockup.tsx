@@ -116,7 +116,7 @@ function AppScreen() {
         {/* Olive header */}
         <div
           style={{
-            background: "#587C34",
+            background: "#606D59",
             borderRadius: "0 0 32px 32px",
             padding: "62px 22px 26px",
             display: "flex",
@@ -149,7 +149,7 @@ function AppScreen() {
                 alignItems: "center",
                 justifyContent: "center",
                 font: `500 16px ${serif}`,
-                color: "#587C34",
+                color: "#606D59",
               }}
             >
               M
@@ -180,7 +180,7 @@ function AppScreen() {
                 cy="60"
                 r="52"
                 fill="none"
-                stroke="#E29A86"
+                stroke="#D9A79E"
                 strokeWidth="10"
                 strokeLinecap="round"
                 strokeDasharray="131 327"
@@ -205,14 +205,14 @@ function AppScreen() {
                   display: "inline-flex",
                   alignItems: "center",
                   gap: 6,
-                  background: "#F9DCD1",
+                  background: "#F3E3DF",
                   borderRadius: 999,
                   padding: "6px 12px",
                   alignSelf: "flex-start",
                 }}
               >
                 <span style={{ fontSize: 13 }}>🔥</span>
-                <span style={{ font: `600 12px ${sans}`, color: "#B46853" }}>
+                <span style={{ font: `600 12px ${sans}`, color: "#A9766B" }}>
                   6 dias seguidos
                 </span>
               </div>
@@ -245,7 +245,7 @@ function AppScreen() {
             </span>
             <div
               style={{
-                background: "#E29A86",
+                background: "#D9A79E",
                 color: "#FFFAF8",
                 borderRadius: 999,
                 padding: 13,
@@ -273,7 +273,7 @@ function AppScreen() {
                 width: 44,
                 height: 44,
                 borderRadius: 16,
-                background: "#DDE9C4",
+                background: "#E6EADB",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -297,7 +297,7 @@ function AppScreen() {
       <div
         style={{
           margin: "0 40px 28px",
-          background: "#587C34",
+          background: "#606D59",
           borderRadius: 999,
           padding: "12px 26px",
           display: "flex",

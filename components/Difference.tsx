@@ -1,12 +1,12 @@
 import { sans, serif } from "./fonts";
 
 const checks = [
-  { text: "Mensagens e ajustes entre as consultas", bg: "#DDE9C4", stroke: "#587C34" },
-  { text: "Constância celebrada, deslizes acolhidos", bg: "#F9DCD1", stroke: "#B46853" },
+  { text: "Mensagens e ajustes entre as consultas", bg: "#E6EADB", stroke: "#606D59" },
+  { text: "Constância celebrada, deslizes acolhidos", bg: "#F3E3DF", stroke: "#A9766B" },
   {
     text: "Privacidade: no ranking, você escolhe seu apelido",
     bg: "#EDECDF",
-    stroke: "#6C7E45",
+    stroke: "#7A8468",
   },
 ];
 
@@ -20,10 +20,10 @@ function DiferencialFoto() {
         width: "100%",
         height: 420,
         objectFit: "cover",
-        objectPosition: "center top",
+        objectPosition: "center 40%",
         borderRadius: 32,
         display: "block",
-        border: "1px solid rgba(88,124,52,0.18)",
+        border: "1px solid rgba(96,109,89,0.18)",
       }}
     />
   );
@@ -47,7 +47,7 @@ export default function Difference() {
         <span
           style={{
             font: `600 12px ${sans}`,
-            color: "#6C7E45",
+            color: "#7A8468",
             letterSpacing: "0.18em",
           }}
         >
@@ -55,14 +55,14 @@ export default function Difference() {
         </span>
         <h2 style={{ margin: 0, font: `500 clamp(28px, 3.2vw, 40px)/1.2 ${serif}` }}>
           Perto de verdade,{" "}
-          <em style={{ fontStyle: "italic", color: "#587C34" }}>leve</em> de
+          <em style={{ fontStyle: "italic", color: "#606D59" }}>leve</em> de
           verdade
         </h2>
         <p
           style={{
             margin: 0,
             font: `400 15.5px/1.65 ${sans}`,
-            color: "#616E48",
+            color: "#6B7263",
           }}
         >
           Aqui não existe dieta-castigo, foto de antes e depois nem cobrança por
