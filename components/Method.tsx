@@ -14,21 +14,21 @@ const pillars: Pillar[] = [
     num: "01",
     numColor: "#B0BAA3",
     icon: "🧭",
-    iconBg: "#E6EADB",
+    iconBg: "#DDE9C4",
     title: "Mapeamento",
     body: "Entender sua rotina, sua relação com a comida e o que já funciona pra você — sem julgamento.",
   },
   {
     num: "02",
-    numColor: "#D9A79E",
+    numColor: "#E29A86",
     icon: "🌱",
-    iconBg: "#F3E3DF",
+    iconBg: "#F9DCD1",
     title: "Intervenção",
     body: "Mudanças pequenas e possíveis, ajustadas semana a semana com check-ins e contato próximo.",
   },
   {
     num: "03",
-    numColor: "#7A8468",
+    numColor: "#6C7E45",
     icon: "🤲",
     iconBg: "#EDECDF",
     title: "Manutenção",
@@ -54,7 +54,7 @@ export default function Method() {
         <span
           style={{
             font: `600 12px ${sans}`,
-            color: "#7A8468",
+            color: "#6C7E45",
             letterSpacing: "0.18em",
           }}
         >
@@ -62,7 +62,7 @@ export default function Method() {
         </span>
         <h2 style={{ margin: 0, font: `500 clamp(28px, 3.2vw, 40px)/1.2 ${serif}` }}>
           Três pilares,{" "}
-          <em style={{ fontStyle: "italic", color: "#606D59" }}>um caminho</em>{" "}
+          <em style={{ fontStyle: "italic", color: "#587C34" }}>um caminho</em>{" "}
           só seu
         </h2>
       </div>
@@ -113,7 +113,7 @@ export default function Method() {
               style={{
                 margin: 0,
                 font: `400 14.5px/1.6 ${sans}`,
-                color: "#6B7263",
+                color: "#616E48",
               }}
             >
               {p.body}

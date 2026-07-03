@@ -6,14 +6,14 @@ import logoOlive from "@/public/assets/logo-olive.png";
 const infoRows = [
   {
     text: "30 minutos",
-    bg: "#E6EADB",
+    bg: "#DDE9C4",
     icon: (
       <svg
         width="16"
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#606D59"
+        stroke="#587C34"
         strokeWidth="2"
         strokeLinecap="round"
       >
@@ -24,14 +24,14 @@ const infoRows = [
   },
   {
     text: "Pelo WhatsApp ou chamada de vídeo",
-    bg: "#F3E3DF",
+    bg: "#F9DCD1",
     icon: (
       <svg
         width="16"
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#A9766B"
+        stroke="#B46853"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -49,7 +49,7 @@ const infoRows = [
         height="16"
         viewBox="0 0 24 24"
         fill="none"
-        stroke="#7A8468"
+        stroke="#6C7E45"
         strokeWidth="2"
         strokeLinecap="round"
       >
@@ -82,7 +82,7 @@ function CalendarDay({ day }: { day: number }) {
       <div
         style={{
           ...base,
-          background: "#606D59",
+          background: "#587C34",
           font: `600 13.5px ${sans}`,
           color: "#FBF8F2",
           boxShadow: "0 6px 16px rgba(96,109,89,0.35)",
@@ -125,7 +125,7 @@ export default function Booking() {
         <span
           style={{
             font: `600 12px ${sans}`,
-            color: "#7A8468",
+            color: "#6C7E45",
             letterSpacing: "0.18em",
           }}
         >
@@ -133,10 +133,10 @@ export default function Booking() {
         </span>
         <h2 style={{ margin: 0, font: `500 clamp(30px, 3.6vw, 46px)/1.2 ${serif}` }}>
           Uma conversa de{" "}
-          <em style={{ fontStyle: "italic", color: "#606D59" }}>30 minutos</em>,
+          <em style={{ fontStyle: "italic", color: "#587C34" }}>30 minutos</em>,
           sem compromisso.
         </h2>
-        <p style={{ margin: 0, font: `400 16px/1.6 ${sans}`, color: "#6B7263" }}>
+        <p style={{ margin: 0, font: `400 16px/1.6 ${sans}`, color: "#616E48" }}>
           A gente entende o seu momento e você conhece como o acompanhamento
           funciona. Escolha o melhor dia pra você.
         </p>
@@ -203,7 +203,7 @@ export default function Booking() {
               alignItems: "center",
               justifyContent: "center",
               gap: 10,
-              background: "#606D59",
+              background: "#587C34",
               color: "#FBF8F2",
               borderRadius: 999,
               padding: "16px 28px",
@@ -337,7 +337,7 @@ export default function Booking() {
               display: "flex",
               alignItems: "center",
               gap: 8,
-              background: "#E6EADB",
+              background: "#DDE9C4",
               borderRadius: 999,
               padding: "9px 16px",
               alignSelf: "center",
@@ -348,10 +348,10 @@ export default function Booking() {
                 width: 7,
                 height: 7,
                 borderRadius: 999,
-                background: "#606D59",
+                background: "#587C34",
               }}
             />
-            <span style={{ font: `500 12.5px ${sans}`, color: "#606D59" }}>
+            <span style={{ font: `500 12.5px ${sans}`, color: "#587C34" }}>
               Terça, 7 de julho · horários à tarde disponíveis
             </span>
           </div>

@@ -1,63 +1,31 @@
 import { sans, serif } from "./fonts";
 
 const checks = [
-  { text: "Mensagens e ajustes entre as consultas", bg: "#E6EADB", stroke: "#606D59" },
-  { text: "Constância celebrada, deslizes acolhidos", bg: "#F3E3DF", stroke: "#A9766B" },
+  { text: "Mensagens e ajustes entre as consultas", bg: "#DDE9C4", stroke: "#587C34" },
+  { text: "Constância celebrada, deslizes acolhidos", bg: "#F9DCD1", stroke: "#B46853" },
   {
     text: "Privacidade: no ranking, você escolhe seu apelido",
     bg: "#EDECDF",
-    stroke: "#7A8468",
+    stroke: "#6C7E45",
   },
 ];
 
-/* Visible, in-brand placeholder for the "diferencial" photo. Swap this block
-   for a real <Image> once Luciana provides a photo — guideline: comida de
-   verdade, natureza, calma (nada de corpo ou balança). */
-function PhotoPlaceholder() {
+/* Foto do Diferencial — a Luciana (fornecida por ela). Fica em `public/`. */
+function DiferencialFoto() {
   return (
-    <div
+    <img
+      src="/luciana-diferencial.jpg"
+      alt="Luciana Junqueira, nutricionista"
       style={{
         width: "100%",
         height: 420,
+        objectFit: "cover",
+        objectPosition: "center top",
         borderRadius: 32,
-        background: "#EFEBDF",
-        border: "1.5px dashed rgba(96,109,89,0.35)",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 12,
-        textAlign: "center",
-        padding: 24,
-        boxSizing: "border-box",
+        display: "block",
+        border: "1px solid rgba(88,124,52,0.18)",
       }}
-    >
-      <svg
-        width="34"
-        height="34"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#7A8468"
-        strokeWidth="1.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        style={{ opacity: 0.7 }}
-      >
-        <rect x="3" y="3" width="18" height="18" rx="2" />
-        <circle cx="8.5" cy="8.5" r="1.5" />
-        <path d="m21 15-5-5L5 21" />
-      </svg>
-      <span
-        style={{
-          font: `500 13.5px ${sans}`,
-          color: "#7A8468",
-          maxWidth: 260,
-          lineHeight: 1.5,
-        }}
-      >
-        Foto: comida de verdade, mesa, natureza ou a Luciana atendendo
-      </span>
-    </div>
+    />
   );
 }
 
@@ -79,7 +47,7 @@ export default function Difference() {
         <span
           style={{
             font: `600 12px ${sans}`,
-            color: "#7A8468",
+            color: "#6C7E45",
             letterSpacing: "0.18em",
           }}
         >
@@ -87,14 +55,14 @@ export default function Difference() {
         </span>
         <h2 style={{ margin: 0, font: `500 clamp(28px, 3.2vw, 40px)/1.2 ${serif}` }}>
           Perto de verdade,{" "}
-          <em style={{ fontStyle: "italic", color: "#606D59" }}>leve</em> de
+          <em style={{ fontStyle: "italic", color: "#587C34" }}>leve</em> de
           verdade
         </h2>
         <p
           style={{
             margin: 0,
             font: `400 15.5px/1.65 ${sans}`,
-            color: "#6B7263",
+            color: "#616E48",
           }}
         >
           Aqui não existe dieta-castigo, foto de antes e depois nem cobrança por
@@ -138,7 +106,7 @@ export default function Difference() {
           ))}
         </div>
       </div>
-      <PhotoPlaceholder />
+      <DiferencialFoto />
     </div>
   );
 }
