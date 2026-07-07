@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { sans } from "./fonts";
-import { WHATSAPP_URL } from "@/lib/site";
+import { WHATSAPP_URL, PLATFORM_URL } from "@/lib/site";
 import logoOlive from "@/public/assets/logo-olive.png";
 
 const navLink: React.CSSProperties = {
@@ -54,6 +54,23 @@ export default function Nav() {
             Depoimentos
           </a>
         </div>
+        <a
+          href={PLATFORM_URL}
+          style={{
+            display: "flex",
+            alignItems: "center",
+            background: "transparent",
+            color: "#606D59",
+            border: "1px solid rgba(96,109,89,0.4)",
+            borderRadius: 999,
+            padding: "9px 16px",
+            font: `600 13.5px ${sans}`,
+            textDecoration: "none",
+            whiteSpace: "nowrap",
+          }}
+        >
+          Área do paciente
+        </a>
         <a
           href={WHATSAPP_URL}
           target="_blank"

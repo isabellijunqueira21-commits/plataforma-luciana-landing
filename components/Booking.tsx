@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { sans, serif } from "./fonts";
-import { WHATSAPP_URL } from "@/lib/site";
+import { WHATSAPP_URL, PLATFORM_URL } from "@/lib/site";
 import logoOlive from "@/public/assets/logo-olive.png";
 
 const infoRows = [
@@ -358,8 +358,29 @@ export default function Booking() {
         </div>
       </div>
       <div
-        style={{ display: "flex", justifyContent: "center", marginTop: 48 }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 12,
+          marginTop: 48,
+        }}
       >
+        <a
+          href={PLATFORM_URL}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            color: "#606D59",
+            border: "1px solid rgba(96,109,89,0.4)",
+            borderRadius: 999,
+            padding: "9px 18px",
+            font: `600 13.5px ${sans}`,
+            textDecoration: "none",
+          }}
+        >
+          Área do paciente
+        </a>
         <span style={{ font: `400 12.5px ${sans}`, color: "#B0BAA3" }}>
           Luciana Junqueira · Nutricionista · CRN 00000
         </span>
