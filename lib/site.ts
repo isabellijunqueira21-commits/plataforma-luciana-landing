@@ -11,3 +11,8 @@ const WHATSAPP_MESSAGE =
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   WHATSAPP_MESSAGE
 )}`;
+
+// Área do paciente — login da plataforma (mesma experiência do produto, abre
+// na mesma aba). Swap the URL if the platform domain changes.
+export const PLATFORM_URL =
+  "https://plataforma-nutricao-luciana-web.vercel.app/";
